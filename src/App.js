@@ -33,7 +33,7 @@ const App = () => {
                 <InputCredentials nameButton="Log In" inputs={inputsLogin}/>
               </Login>
             }/>
-          <Route path="/register" element={<Register></Register>}/>
+          <Route path="/register" element={<Register/>}/>
         </Routes>
       </BrowserRouter>
     </React.Fragment>
