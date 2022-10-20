@@ -4,7 +4,7 @@ import Login from "./screens/login/login";
 import InputCredentials from "./screens/login/loginComponents/inputField";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Register from "./screens/signup/signup";
-
+import Chat from "./screens/chats/chat";
 const App = () => {
   const propsLogin = {
     Title: "Real Time Chat",
@@ -13,6 +13,23 @@ const App = () => {
     link: "/register",
     linkname: "Register"
   }
+
+
+  const props1 = [
+    {
+        name: "Juan",
+        lastchat: "Hola Carlos"
+    },
+    {
+        name: "Maria",
+        lastchat: "Hola Marta"
+    },
+    {
+        name: "Adrian",
+        lastchat: "Hola Juana"
+    }
+];
+
 
   const inputsLogin = [
     {
@@ -34,6 +51,7 @@ const App = () => {
               </Login>
             }/>
           <Route path="/register" element={<Register/>}/>
+          <Route path="/chats" element={<Chat chats={props1}/>}/>
         </Routes>
       </BrowserRouter>
     </React.Fragment>
