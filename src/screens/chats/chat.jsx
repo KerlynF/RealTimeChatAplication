@@ -14,7 +14,6 @@ const Chat = ({chats}) => {
                     return(
                         <SingleChat props={singlechatProps}/>
                     );
-                
                 })}
             </div>
             <ChatText/>

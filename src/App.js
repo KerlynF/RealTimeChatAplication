@@ -27,7 +27,11 @@ const App = () => {
     {
         name: "Adrian",
         lastchat: "Hola Juana"
-    }
+    },
+    {
+        name: "Juan",
+        lastchat: "Hola Carlos"
+    },
 ];
 
 
